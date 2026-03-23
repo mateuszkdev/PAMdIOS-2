@@ -25,19 +25,24 @@ export const Results: React.FC<{ events: Event[]; onToggleFavorite: (id: string)
             onPress={() => onToggleFavorite(item.id as any)}
           />
         )}
-      />
+       />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 10,
-    flex: 1
+    marginTop: 16,
+    flex: 1,
+    paddingHorizontal: 16,
+    backgroundColor: "#f8f9fa",
   },
 
   count: {
-    fontWeight: "bold",
-    marginBottom: 10,
+    fontSize: 18,
+    fontWeight: "600",
+    marginBottom: 16,
+    color: "#1a1a1a",
+    letterSpacing: 0.5,
   },
 });
